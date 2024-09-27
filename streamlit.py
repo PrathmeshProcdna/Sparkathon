@@ -13,7 +13,7 @@ I am here to answer all your incentive related queries!! Let's have a chat!
 """)
 
 # Input query from the user
-user_query = st.text_input("Ask your question about the data:", placeholder="E.g., What is the name of rep ID 47239?")
+user_query = st.text_input("Ask your question about the data:", placeholder="Ask your question")
 
 # When the user clicks the "Get Response" button
 if st.button("Get Response"):
