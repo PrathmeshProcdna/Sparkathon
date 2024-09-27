@@ -70,7 +70,7 @@ class Chat:
             model = "llama-3.2-90b-text-preview"
         )
         ans = response.choices[0].message.content
-        return f"sql query: {sql_query}   ans  {ans}" 
+        return ans 
     
         
     
