@@ -38,7 +38,7 @@ class Chat:
                     --HCP_data_update_Year:INT(nullable = FALSE) :Year of the data update
                     Note: 1) HCP can also be read as "Health care Prectitioner", "Physician", "General Practitioner (GP)", "Primary Care Provider (PCP)", "Specialist", "Nurse Practitioner (NP)", "Physician Assistant (PA)", "Clinician", "Surgeon", "Medical Practitioner", "Healthcare Professional", "Consultant", "Therapist", "Attending Physician", "Doctor", "Medical Provider", "Specialty Care Provider", "Dentist", "Healthcare Practitioner"
                           2)Market Rep can also be identified as "Sales Representative (Sales Rep)", "Pharmaceutical Sales Representative", "Medical Sales Representative", "Territory Manager", "Field Sales Representative", "Business Development Manager (BDM)", "Account Manager", "Key Account Manager (KAM)", "Healthcare Sales Representative", "Medical Device Sales Representative", " Clinical Sales Representative", "Specialty Sales Representative", "Market Access Manager", "Hospital Sales Representative", "Field Marketing Specialist", "Regional Sales Manager", "Sales Consultant", "Account Executive", "Commercial Representative", "Product Specialist", "Territory Sales Executive"
-                    
+                          3)Map   me, mine, I, my  with the name of Sales_Market_Rep_Name Grace Bennett.
 
                     query_prompts =  1.When generating SQL queries, always ensure that DISTINCT is applied for any selection of records or entities that need to be counted distinctly.
                                     2.Do not include any warnings, just produce the SQL query as the output. Any input validation or potential issues should be handled internally without notifying the user.
@@ -70,7 +70,7 @@ class Chat:
             model = "llama-3.2-90b-text-preview"
         )
         ans = response.choices[0].message.content
-        return f"sql query: {sql_query}   ans  {ans}" 
+        return ans 
     
         
     
